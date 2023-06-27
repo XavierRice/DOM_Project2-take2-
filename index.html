@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1> Naruto Nina Tool Store</h1>
+    </header>
+    <div class="container">
+        <div class="box form">
+            <form class="form main">
+                <label>name</label>
+                <input type="text" placeholder="ie: Sam Smith" id="name" class="name" required>
+                <label>price</label>
+                <input type="number" step="any" min="0.00" max="100.00" id="price" placeholder="0.00" class="price"
+                    required>
+                <label>inStock?</label>
+                <select name="inStock?" id="stock" class="stock">
+                    <option value="Yes" id="yes">Yes</option>
+                    <option value="No" id="no">No</option>
+                </select>
+                <label>submit
+                    <input type="submit" class="submit form">
+                </label>
+                <label>reset
+                    <input type="reset" class="submit form">
+                </label>
+            </form>
+            </div>
+        <div class="box assets">
+            <ul id="ninja_tools">
+                <li>
+                    <img src="https://staticg.sportskeeda.com/editor/2022/03/13f49-16468451410797.png" alt="Kunai">
+                    <h3>Name: Kunai</h3>
+                    <p>Price: 12.00</p>
+                    <p>In-Stock</p>
+                </li>
+                <li>
+                    <img src="https://files.cults3d.com/uploaders/17257697/illustration-file/ba6ad09f-f491-42e6-a1d4-525b61be4e40/cuchilla-de-chakra-360.jpg"
+                        alt="Chakra Blade">
+                    <h3>Name: Chakra Blade</h3>
+                    <p>Price: 35.00</p>
+                    <p>In-Stock</p>
+                </li>
+                <li>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiYjOugQahtEY75GUaQS5cSSGa1nkjz6Wtxg&usqp=CAU"
+                        alt="Hammer-Sword">
+                    <h3>Name: Hammer-Sword</h3>
+                    <p>Price: 45.00</p>
+                    <p>NOT In-Stock</p>
+                </li>
+            </ul>
+        </div>
+
+</body>
+
+</html>
