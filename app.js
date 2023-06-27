@@ -1,5 +1,7 @@
 const test = console.log
-const li = document.querySelectorAll("li")
+
+const toolsList = document.querySelector("ul")
+
 const form = document.querySelector("form")
 const selectStock = document.querySelector("select")
 
@@ -25,21 +27,25 @@ imageLabel.append(imageInput)
 fighterLabel.after(imageLabel)
 
 
-
-const button = document.createElement("button")
-button.setAttribute("type", "radio")
-button.classList.add("li_reset")
+const li = document.getElementsByClassName("li_tools")
 
 for(let i = 0; i < li.length; i++){
+    
+    const button = document.createElement("button")
+    button.setAttribute("type", "radio")
+    button.classList.add("li_reset")
+
+
     li[i].append(button)
 }    
+
+
+
 
 //insert a delete Event Listener on "button" for assets
 
 
 
-
-const toolsList = document.querySelector("ul")
 const ninjaTool = document.createElement("li")
 
 
