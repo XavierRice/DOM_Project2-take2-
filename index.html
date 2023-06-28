@@ -14,43 +14,45 @@
         <h1> Naruto Nina Tool Store</h1>
     </header>
     <div class="container">
-        <div class="box form">
+        <div class="box1 form">
             <form class="form main">
                 <label>name</label>
-                <input type="text" placeholder="ie: Sam Smith" id="name" class="name" required>
+                <input type="text" placeholder="Item Name" id="name" class="name" required>
                 <label>price</label>
                 <input type="number" step="any" min="0.00" max="100.00" id="price" placeholder="0.00" class="price"
                     required>
                 <label>inStock?</label>
-                <select name="inStock?" id="stock" class="stock">
+                <select name="inStock?" id="stock" class="stock" required>
                     <option value="Yes" id="yes">Yes</option>
                     <option value="No" id="no">No</option>
                 </select>
-                <label>submit
-                    <input type="submit" class="submit form">
-                </label>
-                <label>reset
-                    <input type="reset" class="submit form">
-                </label>
+                <div class="button box1">
+                    <label>submit
+                        <input type="submit" class="submit form">
+                    </label>
+                    <label>reset
+                        <input type="reset" class="submit form" onclick="clearForm()">
+                    </label>
+                </div>
             </form>
-            </div>
-        <div class="box assets">
+        </div>
+        <div class="box2 assets">
             <ul id="ninja_tools">
                 <li class="li_tools">
-                    <img src="https://staticg.sportskeeda.com/editor/2022/03/13f49-16468451410797.png" alt="Kunai">
+                    <img src="https://staticg.sportskeeda.com/editor/2022/03/13f49-16468451410797.png" alt="Kunai" class="transform">
                     <h3>Name: Kunai</h3>
                     <p>Price: 12.00</p>
                     <p>In-Stock</p>
                 </li>
                 <li class="li_tools">
-                    <img src="https://files.cults3d.com/uploaders/17257697/illustration-file/ba6ad09f-f491-42e6-a1d4-525b61be4e40/cuchilla-de-chakra-360.jpg"
+                    <img src="https://files.cults3d.com/uploaders/17257697/illustration-file/ba6ad09f-f491-42e6-a1d4-525b61be4e40/cuchilla-de-chakra-360.jpg"  class="transform"
                         alt="Chakra Blade">
                     <h3>Name: Chakra Blade</h3>
                     <p>Price: 35.00</p>
                     <p>In-Stock</p>
                 </li>
                 <li class="li_tools">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiYjOugQahtEY75GUaQS5cSSGa1nkjz6Wtxg&usqp=CAU"
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiYjOugQahtEY75GUaQS5cSSGa1nkjz6Wtxg&usqp=CAU"  class="transform"
                         alt="Hammer-Sword">
                     <h3>Name: Hammer-Sword</h3>
                     <p>Price: 45.00</p>
@@ -58,7 +60,7 @@
                 </li>
             </ul>
         </div>
-
+<footer class="box3 end"></footer>
 </body>
 
 </html>

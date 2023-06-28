@@ -6,21 +6,34 @@ body{
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "form assets";
+    grid-template-areas: "form assets end";
     border: 7px solid black;
     border-radius: 10px;
 }
 
- .container div{
+.container div{
     display: flex;
     padding: 15px;
     border: 2px solid black;
     background-color: rgb(255, 191, 0);
+    
+    
+    .box1{
+        box-sizing: border-box;
+        box-sizing: content;
+        background-color: brown;
+        margin: 0;
+    }
+
+    .box2{
+        background-color: darkgoldenrod;
+    }
 }  
 
 header{
     text-align: center;
-  
+    font-family: fantasy;
+    font-size: larger;
 }
 
 ul{
@@ -31,4 +44,19 @@ img {
     width: 150px;
 }
 
+.box3{
+    border: 4px solid brown;  
+}
 
+h3{
+    font-family: fantasy;
+}
+
+p{
+    font-family: fantasy;
+}
+
+
+.transform{
+    transition: transform 0.3s ease;
+}
