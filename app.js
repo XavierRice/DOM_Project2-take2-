@@ -1,6 +1,5 @@
 const test = console.log
 
-
 const form = document.querySelector("form")
 const selectStock = document.querySelector("select")
 
@@ -76,7 +75,7 @@ form.addEventListener("submit", (event) => {
 
   toolsList.appendChild(ninjaTool)
 
-  setTimeout(clearForm, 3000)
+  setTimeout(clearForm)
 
 })
 
@@ -122,11 +121,17 @@ h4Stock[i].addEventListener("click", (event)=>{
 
 const popup = document.getElementById("popup")
 const closeButton= document.getElementsByClassName("close")
+const message = document.getElementsByName("message")
+const p = document.querySelectorAll("p")
+
+test(p[3])
 
 for(let i =0; i < transform.length; i++){
  
   transform[i].addEventListener("click", (event) =>{
     popup.style.display= "block"
+     p[3].textContent = message
+
   })
   
 }
@@ -137,3 +142,5 @@ for (let i = 0; i < closeButton.length; i++){
     popup.style.display= "none"
   })
 }
+
+
