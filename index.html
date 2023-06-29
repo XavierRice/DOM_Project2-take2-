@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="app.js" defer></script>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Kablammo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kablammo">
     <title>X's Inventory Web App: Naruto Tools</title>
 </head>
 
@@ -18,18 +18,19 @@
         <div class="box1 form">
             <form class="form main">
                 <div class="form-row">
-                <label>name</label>
-                <input type="text" placeholder="Item Name" id="name" class="name" required>
-                <label>price</label>
-                <input type="number" step="any" min="0.00" max="100.00" id="price" placeholder="0.00" class="price"
-                    required>
+                    <label>name</label>
+                    <input type="text" placeholder="Item Name" id="name" class="name" required>
+                    <label>price</label>
+                    <input type="number" step="any" min="0.00" max="100.00" id="price" placeholder="0.00" class="price"
+                        required>
                 </div>
                 <div class="form-row">
-                <label>inStock?</label>
-                <select name="inStock?" id="stock" class="stock" required>
-                    <option value="Yes" id="yes">Yes</option>
-                    <option value="No" id="no">No</option>
-                </select>
+                    <label>inStock?</label>
+                    <select name="inStock?" id="stock" class="stock" required>
+                        <option value="unknown" id="unknown">???</option>
+                        <option value="Yes" id="yes">Yes</option>
+                        <option value="No" id="no">No</option>
+                    </select>
                 </div>
                 <div class="big-button box1 ">
                     <label>submit
@@ -39,31 +40,29 @@
                         <input type="reset" class="submit form" onclick="clearForm()">
                     </label>
                 </div>
-                <div>
-                    <textarea id="message" name="message" placeholder="current resource notes"></textarea>
-                </div>
             </form>
         </div>
         <div class="box2 assets">
             <ul id="ninja_tools">
                 <li class="li_tools">
-                    <img src="https://staticg.sportskeeda.com/editor/2022/03/13f49-16468451410797.png" alt="Kunai" class="transform">
+                    <img src="https://staticg.sportskeeda.com/editor/2022/03/13f49-16468451410797.png" alt="Kunai"
+                        class="transform">
                     <h3>Name: Kunai</h3>
                     <p>Price: 12.00</p>
                     <button class="button current">Current Stock?</button>
                     <h4 class="stock_status">No</h4>
                 </li>
                 <li class="li_tools">
-                    <img src="https://files.cults3d.com/uploaders/17257697/illustration-file/ba6ad09f-f491-42e6-a1d4-525b61be4e40/cuchilla-de-chakra-360.jpg"  class="transform"
-                        alt="Chakra Blade">
+                    <img src="https://files.cults3d.com/uploaders/17257697/illustration-file/ba6ad09f-f491-42e6-a1d4-525b61be4e40/cuchilla-de-chakra-360.jpg"
+                        class="transform" alt="Chakra Blade">
                     <h3>Name: Chakra Blade</h3>
                     <p>Price: 35.00</p>
                     <button class="button current">Current Stock?</button>
                     <h4 class="stock_status">No</h4>
                 </li>
                 <li class="li_tools">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiYjOugQahtEY75GUaQS5cSSGa1nkjz6Wtxg&usqp=CAU"  class="transform"
-                        alt="Hammer-Sword">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiYjOugQahtEY75GUaQS5cSSGa1nkjz6Wtxg&usqp=CAU"
+                        class="transform" alt="Hammer-Sword">
                     <h3>Name: Hammer-Sword</h3>
                     <p>Price: 45.00</p>
                     <button class="button current">Current Stock?</button>
@@ -71,17 +70,16 @@
                 </li>
             </ul>
         </div>
-        <div id="popup" class="popup">
+        <div id="popup" class="popup" style="display: none" >
             <div class="popup-content">
-           <span class="close"><strong>&times;</strong></span>
-           <h2>Resource Notes</h2>
-           <div>
-           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, consectetur nobis. Adipisci minima fugiat nihil? Natus ipsum vel, totam, nam perferendis sunt soluta dolorum dignissimos laudantium provident unde, praesentium quisquam.</p>
+                <span class="close"><strong>&times;</strong></span>
+                <h2>Note:</h2>
+                <textarea id="message" name="message" placeholder="Inventory Notes"></textarea>
+            </div>
         </div>
-        </div>
-<footer class="box3 end"> 
-Thanks for Shopping!
-</footer>
+                <footer class="box3 end">
+                    Thanks for Shopping!
+                </footer>
 </body>
 
 </html>

@@ -55,11 +55,26 @@ const toolsList = document.querySelector("ul")
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const priceInput = event.target["price"].value;
-  const nameInput = event.target["name"].value;
-  const stockInput = event.target["stock"].value;
-  const imageSRC = event.target["image"].value;
+  let priceInput = event.target["price"].value;
+  if(priceInput === ""){
+    priceInput = "price unknown"
+  }
+  let nameInput = event.target["name"].value;
 
+  let stockInput = event.target["stock"].value;
+   if(stockInput === "???"){
+    stockInput = "unknown"
+   }
+
+  let imageSRC = event.target["image"].value;
+
+  if(imageSRC === ""){
+    imageSRC = "./assets/no_image.jpeg"
+  }
+
+ const newStock = document.createElement("h3")
+ newStock.innerText = `Stock: ${stockInput}`
+ ninjaTool.appendChild(newStock)
 
   const newImage = document.createElement("img")
   newImage.setAttribute("src", imageSRC)
@@ -130,8 +145,7 @@ for(let i =0; i < transform.length; i++){
  
   transform[i].addEventListener("click", (event) =>{
     popup.style.display= "block"
-     p[3].textContent = message
-
+  
   })
   
 }
