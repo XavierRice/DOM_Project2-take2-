@@ -1,6 +1,40 @@
+.popup{
+   display: none;   /*this should make it invisible till you click it */
+   position: fixed;
+   top:0;
+   left:0;
+   width:60%;
+   height: 60%;
+   background-color: rgba(0,0,0,0.5);
+   z-index: 9999;   /* CSS property that determines the stacking order of positioned elements along the z-axis (depth) on a web page */
+}
+.pop-content{
+
+  background-color: #fff;
+  width: 100px;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+
+}
+
+.close{
+
+ position:absolute;
+ top: 10px;
+ right: 10px;
+ font-size: 20px;
+ font-family: fantasy;
+ cursor: pointer;
+}
+
 
 body{
     background-color: rgb(139, 62, 34);
+    margin: 0;
+    padding: 0;
+    font-family: "Kablammo";
 }
 
 .container{
@@ -32,8 +66,9 @@ body{
 
 header{
     text-align: center;
-    font-family: fantasy;
     font-size: larger;
+    border: 15px solid goldenrod;
+    border-radius: 30%;
 }
 
 ul{
@@ -41,7 +76,7 @@ ul{
 }
 
 img {
-    width: 150px;
+    width: 250px;
 }
 
 .box3{
@@ -56,7 +91,47 @@ p{
     font-family: fantasy;
 }
 
-
-.transform{
+.transform img{
     transition: transform 0.3s ease;
+    width: 250px;
 }
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: brown;
+    text-align: center;
+    padding: 5px;
+    
+}
+
+.form-row{
+    display: flex;
+}
+
+input[type="text"],input[type="number"],select, textarea{
+    color:white;
+    background-color: burlywood;
+    border:none;
+    font-size: 18px;
+    margin: 16px;
+}
+
+input[type="text"]::placeholder,input[type="email"],textarea::placeholder{
+    color: black
+}
+
+input[type="text"],input[type="email"]{
+    width: 50%;
+    height: 56px;
+}
+
+textarea{
+    height: 200px;
+    width: 100%;
+}
+
+
+

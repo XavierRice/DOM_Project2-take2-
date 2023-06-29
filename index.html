@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="app.js" defer></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Kablammo">
     <title>Document</title>
 </head>
 
@@ -16,23 +17,30 @@
     <div class="container">
         <div class="box1 form">
             <form class="form main">
+                <div class="form-row">
                 <label>name</label>
                 <input type="text" placeholder="Item Name" id="name" class="name" required>
                 <label>price</label>
                 <input type="number" step="any" min="0.00" max="100.00" id="price" placeholder="0.00" class="price"
                     required>
+                </div>
+                <div class="form-row">
                 <label>inStock?</label>
                 <select name="inStock?" id="stock" class="stock" required>
                     <option value="Yes" id="yes">Yes</option>
                     <option value="No" id="no">No</option>
                 </select>
-                <div class="button box1">
+                </div>
+                <div class="big-button box1 ">
                     <label>submit
                         <input type="submit" class="submit form">
                     </label>
                     <label>reset
                         <input type="reset" class="submit form" onclick="clearForm()">
                     </label>
+                </div>
+                <div>
+                    <textarea name="message" placeholder="Your message"></textarea>
                 </div>
             </form>
         </div>
@@ -42,25 +50,36 @@
                     <img src="https://staticg.sportskeeda.com/editor/2022/03/13f49-16468451410797.png" alt="Kunai" class="transform">
                     <h3>Name: Kunai</h3>
                     <p>Price: 12.00</p>
-                    <p>In-Stock</p>
+                    <button class="button current">Current Stock?</button>
+                    <h4 class="stock_status">No</h4>
                 </li>
                 <li class="li_tools">
                     <img src="https://files.cults3d.com/uploaders/17257697/illustration-file/ba6ad09f-f491-42e6-a1d4-525b61be4e40/cuchilla-de-chakra-360.jpg"  class="transform"
                         alt="Chakra Blade">
                     <h3>Name: Chakra Blade</h3>
                     <p>Price: 35.00</p>
-                    <p>In-Stock</p>
+                    <button class="button current">Current Stock?</button>
+                    <h4 class="stock_status">No</h4>
                 </li>
                 <li class="li_tools">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiYjOugQahtEY75GUaQS5cSSGa1nkjz6Wtxg&usqp=CAU"  class="transform"
                         alt="Hammer-Sword">
                     <h3>Name: Hammer-Sword</h3>
                     <p>Price: 45.00</p>
-                    <p>NOT In-Stock</p>
+                    <button class="button current">Current Stock?</button>
+                    <h4 class="stock_status">No</h4>
                 </li>
             </ul>
         </div>
-<footer class="box3 end"></footer>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+           <span class="close"><strong>&times;</strong></span>
+           <h2>THE CONTENT</h2>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, consectetur nobis. Adipisci minima fugiat nihil? Natus ipsum vel, totam, nam perferendis sunt soluta dolorum dignissimos laudantium provident unde, praesentium quisquam.</p>
+        </div>
+<footer class="box3 end"> 
+Thanks for Shopping!
+</footer>
 </body>
 
 </html>
