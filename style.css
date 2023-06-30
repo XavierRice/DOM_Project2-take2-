@@ -109,6 +109,7 @@ footer{
 }
 
 input[type="text"],input[type="number"],select, textarea{
+    display: flex;
     color:white;
     background-color: burlywood;
     border:none;
@@ -116,11 +117,12 @@ input[type="text"],input[type="number"],select, textarea{
     margin: 16px;
 }
 
-input[type="text"]::placeholder,input[type="email"],textarea::placeholder{
+input[type="text"]::placeholder,input[type="price"],textarea::placeholder{
     color: black
 }
 
-input[type="text"],input[type="email"]{
+input[type="text"],input[type="price"]{
+    min-width: 30px;
     width: 50%;
     height: 56px;
 }
