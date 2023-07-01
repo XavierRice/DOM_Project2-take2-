@@ -114,32 +114,12 @@ for (let i = 0; i < transform.length; i++) {
 }
 
 
-const stockButton = document.getElementsByClassName("current")
-const h4Stock = document.getElementsByClassName("stock_status")
-
-
-for (let i = 0; i < stockButton.length; i++) {
-
-  stockButton[i].addEventListener("click", (event) => {
-    h4Stock[i].innerText = "In Stock"
-  })
-
-}
-
-for (let i = 0; i < h4Stock.length; i++) {
-h4Stock[i].addEventListener("click", (event)=>{
-  h4Stock[i].innerText = " Not In Stock"
-})
-
-}
-
 
 const popup = document.getElementById("popup")
 const closeButton= document.getElementsByClassName("close")
 const message = document.getElementsByName("message")
 const p = document.querySelectorAll("p")
 
-test(p[3])
 
 for(let i =0; i < transform.length; i++){
  
@@ -150,11 +130,25 @@ for(let i =0; i < transform.length; i++){
   
 }
 
+let h4Status = document.getElementsByClassName("stock_status")
+test(h4Status)
 
-for (let i = 0; i < closeButton.length; i++){
-  closeButton[i].addEventListener("click", (event) => {
-    popup.style.display= "none"
-  })
+let stateOfStock = true
+
+for(let i = 0; i < h4Status.length; i++){
+
+h4Status[i].addEventListener("click", () => {
+
+stateOfStock = !stateOfStock
+
+h4Status[i].innerText = "In-Stock"
+if(stateOfStock === true){
+  h4Status[i].innerText = "In-Stock"
+}else{
+  h4Status[i].innerText = "NOT In-Stock"
 }
 
+
+})
+}
 
