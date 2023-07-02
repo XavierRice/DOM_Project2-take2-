@@ -59,7 +59,7 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   let priceInput = `Price: ${event.target["price"].value}`;             //using the event to gather the inputed information
-  if(priceInput === ""){                                      //adding logic for empty string occurences
+  if(priceInput === "Price:"){                                      //adding logic for empty string occurences
     priceInput = "Price: unknown"
   }
   let nameInput = event.target["name"].value;
@@ -114,11 +114,15 @@ for (let i = 0; i < transform.length; i++) {
 }
 
 
-
 const popup = document.getElementById("popup")              //SKILL SHARE!!!
 const closeButton= document.getElementsByClassName("close")
 const message = document.getElementsByName("message")
 const p = document.querySelectorAll("p")
+
+function closePopUp(){
+  popup.style.display="none"
+}
+
 
 
 for(let i =0; i < transform.length; i++){
@@ -131,7 +135,6 @@ for(let i =0; i < transform.length; i++){
 }
 
 let h4Status = document.getElementsByClassName("stock_status")
-test(h4Status)
 
 let stateOfStock = true          /// adding my toggle function to my status
 
