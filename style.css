@@ -73,7 +73,7 @@ ul{
 }
 
 img {
-    width: 250px;
+    width: 550px;
 }
 
 .box3{
@@ -118,7 +118,8 @@ input[type="text"],input[type="number"],select, textarea{
 }
 
 input[type="text"]::placeholder,input[type="price"],textarea::placeholder{
-    color: black
+    color: black;
+    margin: 16px;
 }
 
 input[type="text"],input[type="price"]{
@@ -132,5 +133,8 @@ textarea{
     width: 100%;
 }
 
-
-
+@media(max-width:480px){
+    img {
+        width: 250px;
+    }
+}

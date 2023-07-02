@@ -6,12 +6,14 @@ a project-inventory-web-application
 This is a VERY simple inventory management application for a single resource. Ninja Tools.
 There are 3 resources on display. 
 
-You can let us know if its still in stock by hitting the current stock button. If you made an error just click the "in-stock" to change it back!
+You can let us know if its still in stock by toggling the current stock button. 
 You can delete any resources you like! Just click delete!
 
-if you would like to leave us a message please do!!
+The pictues are 550px but when you adjust to a smaller screen @media(min-width:480px) they change to smaller pictues.
 
-If you put in the name of the item (required), the price (required-up to 100$ max) and add a img link *(assets/Sci-NinjaTool.jpeg, assets/throwinstars.jpeg, assets/windShuriken.jpeg ) it will upload to the screen.
+if you would like to leave us a message please do!! Just click on the picture for a popup message!
+
+If you put in the name of the item (required), the price (required-up to 100$ max) and add a img link *(assets/Sci-NinjaTool.jpeg, assets/throwinstars.jpeg, assets/windShuriken.jpeg or any other pic you find ) it will upload to the screen.
     * ive included relative paths for a few items you could add to the resources list so you won't run into any errors! But feel free to choose your own!
 
 just hit the submit button to sumbit or reset it it if you like.
